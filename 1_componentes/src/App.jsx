@@ -4,6 +4,7 @@ import "./App.css";
 // importar componente filho
 import FuncionalComponent from "./components/FunctionalComponent";
 import ClassComponent from "./components/ClassComponent";
+import PropsExample from "./components/PropsExample";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       {/* Utilizando componente importado no JSX */}
       <FuncionalComponent />
       <ClassComponent />
+      <PropsExample nome="Leonardo" idade={21} />
     </>
   )
 }
