@@ -24,6 +24,11 @@ const TodoApp = () => {
 
         setInputValue('');
     }
+
+    const deleteTask = (id) => {
+        setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
+    }
+    
   return (
     <div className='container'>
         <h1 className='title'>Lista de tarefas</h1>
@@ -45,7 +50,7 @@ const TodoApp = () => {
             {todos.map((todos) => (
                 <li key={todos.id} className='todo-item'>
                     {todos.text}
-                    <button className='delete-btn'>Excluir</button>
+                    <button className='delete-btn' onClick={() => deleteTask(todos.id)}>Excluir</button>
                 </li>
             ))}
         </ul>
