@@ -1,3 +1,5 @@
+# ANOTAÇÕES DO CURSO
+
 # Instalação do React + Vite
 **Comandos:**
 * *npx create-vite .* - Comando para criar projeto react com Vite
